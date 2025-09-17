@@ -1,0 +1,36 @@
+{
+  "name": "http",
+  "description": "http server",
+  "keywords": [
+    "http"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Sinuhe Maceda",
+    "email": "sinuhe.dev@gmail.com",
+    "url": "https://sinuhe.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/sinuhedev/http"
+  },
+  "type": "module",
+  "bin": {
+    "http": "src/http.js"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "scripts": {
+    "start": "",
+    "test:http": "./src/http.js  -x 3000 example",
+    "test:https": "./src/http.js -s 3000 example",
+    "clean": "rm -fr node_modules package-lock.json",
+    "make": "node --run clean && npm install",
+    "eslint": "standard src"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
