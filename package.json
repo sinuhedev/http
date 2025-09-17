@@ -16,6 +16,7 @@
     "url": "git+https://https://github.com/sinuhedev/http"
   },
   "type": "module",
+  "private": true,
   "bin": {
     "http": "src/http.js"
   },
