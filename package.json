@@ -18,15 +18,14 @@
   "type": "module",
   "private": true,
   "bin": {
-    "http": "src/http.js"
+    "http": "src/index.js"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
   "scripts": {
-    "start": "",
-    "test:http": "./src/http.js  -x 3000 example",
-    "test:https": "./src/http.js -s 3000 example",
+    "start": "export NODE_OPTIONS='--inspect' && node --watch src/index.js",
+    "test": "./src/index.js example",
     "clean": "rm -fr node_modules package-lock.json",
     "make": "node --run clean && npm install",
     "eslint": "standard src"
